@@ -1,0 +1,70 @@
+.list {
+  background-color: rgb(232, 230, 230);
+  border-radius: 20px;
+  border: 1px solid gray;
+}
+body {
+  background-color: white;
+}
+.userImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.login {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.loginCard {
+  background-image: url("../component/Startsy.png");
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: cover;
+}
+.label {
+  color: black;
+  font-weight: 500;
+}
+
+.header {
+  background-color: white !important;
+  /* position: absolute !important; */
+  min-width: 100vw;
+}
+
+.no {
+  align-self: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% , -50%);
+  font-size: 22px;
+  color: #16181a;
+}
+
+.link{
+  margin-left: 10px;
+  color: black;
+}
+.btn-hover-green:hover {
+  background-color: green;
+  color: white;
+}
+
+.headerParent{
+  position: relative;
+  width: 100%;
+}
+.error{
+  color: red;
+}

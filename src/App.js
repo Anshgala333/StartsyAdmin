@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import AcceptInvestor from './component/AcceptOrRejectInvestor'
+import Header from './component/Header'
+import { Outlet } from 'react-router'
+import { ToastContainer } from 'react-toastify';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <div>
+      <ToastContainer position="top-center"/>
+      <Header />
+      <Outlet />
 
-export default App;
+    </div>
+  )
+}

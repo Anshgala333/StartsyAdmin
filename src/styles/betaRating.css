@@ -1,0 +1,62 @@
+/* Add some padding and margin for better spacing */
+.container-fluid {
+    padding: 10px;
+  }
+  
+  /* Styling for the table */
+  .table {
+    width: 98%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  /* Styling the table headers */
+  .table thead {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  /* Style table rows and hover effect */
+  .table tbody tr {
+    transition: background-color 0.3s ease;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f8f9fa;
+  }
+  
+  /* Make table text aligned to center */
+  .table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 15px;
+  }
+  
+  /* Style for the stars (rating) */
+  .table td {
+    font-size: 18px;
+    color: #000000;
+  }
+  
+  h1 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+
+  
+.tableImg{
+    width : 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .tabledetails{
+    display: flex;
+
+  }
+  .name{
+    align-self: center;
+    margin-left: 10px;
+  }
