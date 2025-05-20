@@ -12,6 +12,9 @@ const UserStat = () => {
     async function download() {
         console.log("download");
 
+        console.log(process.env.REACT_APP_URL);
+        
+
 
         try {
             var response = await fetch(`${process.env.REACT_APP_URL}/admin/convertUserDataToExcel`)

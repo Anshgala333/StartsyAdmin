@@ -26,7 +26,7 @@ const AcceptInvestor = () => {
         console.log(id);
         
         if (window.confirm("Are you sure you want to accept?")) {
-            var response = await fetch(`http://localhost:5002/admin/accptOrRejectInvestor/${id}/${true}`, {
+            var response = await fetch(`${process.env.REACT_APP_URL}/admin/accptOrRejectInvestor/${id}/${true}`, {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',
@@ -40,8 +40,8 @@ const AcceptInvestor = () => {
 
     const handleReject = async(id) => {
           
-        if (window.confirm("Are you sure you want to accept?")) {
-            var response = await fetch(`http://localhost:5002/admin/accptOrRejectInvestor/${id}/${false}`, {
+        if (window.confirm("Are you sure you want to reject?")) {
+            var response = await fetch(`${process.env.REACT_APP_URL}/admin/accptOrRejectInvestor/${id}/${false}`, {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',
